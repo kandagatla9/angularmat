@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -29,6 +29,21 @@ import { MatTreeModule } from '@angular/material/tree';
 import { DragdropComponent } from './dragdrop/dragdrop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { CardComponent } from './card/card.component';
+import { ThemeComponent } from './theme/theme.component';
+import { SliderComponent } from './slider/slider.component';
+import { BadgeComponent } from './badge/badge.component';
+import { ButtonComponent } from './button/button.component';
+import { ChipsComponent } from './chips/chips.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { RadioComponent } from './radio/radio.component';
+import { StepperComponent } from './stepper/stepper.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { HttpClientModule } from '@angular/common/http'; 
+import { CommonModule } from '@angular/common';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatNativeDateModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -39,7 +54,15 @@ import { CardComponent } from './card/card.component';
     DashboardComponent,
     TreeComponent,
     DragdropComponent,
-    CardComponent
+    CardComponent,
+    ThemeComponent,
+    SliderComponent,
+    BadgeComponent,
+    ButtonComponent,
+    ChipsComponent,
+    RadioComponent,
+    StepperComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +73,7 @@ import { CardComponent } from './card/card.component';
     MatSelectModule,
     MatRadioModule,
     MatCardModule,
+    FormsModule,
     ReactiveFormsModule,
     LayoutModule,
     MatToolbarModule,
@@ -63,7 +87,17 @@ import { CardComponent } from './card/card.component';
     MatGridListModule,
     MatMenuModule,
     MatTreeModule,
-    DragDropModule
+    DragDropModule,
+    MatProgressSpinnerModule,
+    MatFormFieldModule,
+    MatStepperModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatToolbarModule, 
+    MatButtonModule,
+    CommonModule,
+    MatBadgeModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
