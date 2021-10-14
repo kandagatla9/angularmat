@@ -5,13 +5,14 @@ import { TooltipRoutingModule } from './tooltip-routing.module';
 import { TooltipComponent } from './tooltip.component';
 
 import {MatTooltipModule} from '@angular/material/tooltip';
-
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [TooltipComponent],
   imports: [
     CommonModule,
     TooltipRoutingModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatButtonModule
   ]
 })
 export class TooltipModule { }
